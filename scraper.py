@@ -54,7 +54,7 @@ for i in range(len(link_list)):
   article_list.append(ch)
 
 Type=''
-data={  'title' : article_title_list , 'article' : article_list ,'link'  : link_list, Type: 'type'}
+data={  'title' : article_title_list , 'article' : article_list ,'link'  : link_list,'type': Type}
 df1 = pd.DataFrame (data, columns = ['link','article','title','type'])
 
 #sport
@@ -138,7 +138,7 @@ for i in range(len(link_list)):
   article_list.append(ch)
 
 Type=''
-data={  'title' : article_title_list , 'article' : article_list ,'link'  : link_list, Type: 'type'}
+data={  'title' : article_title_list , 'article' : article_list ,'link'  : link_list, 'type': Type}
 df3 = pd.DataFrame (data, columns = ['link','article','title','type'])
 
 df4=pd.concat([df1,df2,df3])
