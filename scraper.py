@@ -54,8 +54,8 @@ for i in range(len(link_list)):
   article_list.append(ch)
 
 Type=''
-data={  'Title' : article_title_list , 'Article' : article_list ,'link'  : link_list, Type: 'Type'}
-df1 = pd.DataFrame (data, columns = ['link','Article','Title','Type'])
+data={  'title' : article_title_list , 'article' : article_list ,'link'  : link_list, Type: 'type'}
+df1 = pd.DataFrame (data, columns = ['link','article','title','type'])
 
 #sport
 page_link_list=[]
@@ -96,8 +96,8 @@ for i in range(len(link_list)):
   article_list.append(ch)
 
 Type=''
-data={  'Title' : article_title_list , 'Article' : article_list ,'link'  : link_list, 'Type': Type}
-df2 = pd.DataFrame (data, columns = ['link','Article','Title','Type'])
+data={  'title' : article_title_list , 'article' : article_list ,'link'  : link_list, 'type': Type}
+df2 = pd.DataFrame (data, columns = ['link','article','title','type'])
 
 #sfax
 page_link_list=[]
@@ -138,8 +138,8 @@ for i in range(len(link_list)):
   article_list.append(ch)
 
 Type=''
-data={  'Title' : article_title_list , 'Article' : article_list ,'link'  : link_list, Type: 'Type'}
-df3 = pd.DataFrame (data, columns = ['link','Article','Title','Type'])
+data={  'title' : article_title_list , 'article' : article_list ,'link'  : link_list, Type: 'type'}
+df3 = pd.DataFrame (data, columns = ['link','article','title','type'])
 
 df4=pd.concat([df1,df2,df3])
 
